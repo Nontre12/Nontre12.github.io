@@ -1,0 +1,25 @@
+title: Nontre
+email: nontre@nontre.es
+description: Things I'm learning
+baseurl: "" # the subpath of your site, e.g. /blog
+domain: "nontre.es"
+url: "https://nontre.es"
+github_username:  Nontre12
+linkedin_username: alejandroperezgarcia12
+show_excerpts: True
+
+# Build settings
+theme: minima
+#plugins:
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
