@@ -55,4 +55,4 @@ In this project, instead of linking the precompiled libnx library provided by de
 5. Insert the SD card back into your Nintendo Switch.
 
 ## License
-This project is licensed under the GNU General Public License v3.0. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the GNU General Public License v3.0. See the [LICENSE](https://github.com/Nontre12/nspi/blob/main/LICENSE) file for details.
