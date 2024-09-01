@@ -4,6 +4,7 @@ title: 👾 NSPi
 excerpt: A Nintendo Switch package downloader homebrew
 tags: homebrew c c++ libnx cmake nintendo switch nintendo-switch development
 permalink: /nspi
+image: /assets/2024-08-20-nspi.jpg
 ---
 
 Source [NSPi](https://github.com/Nontre12/nspi).
