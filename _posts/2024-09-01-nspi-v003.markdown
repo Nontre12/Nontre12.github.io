@@ -1,0 +1,18 @@
+---
+layout: post
+title: 👾 NSPi pre-release v0.0.3
+excerpt: Added cross-platform build support for testing purposes
+tags: homebrew c c++ libnx cmake nintendo switch nintendo-switch development
+---
+
+![](/assets/2024-09-01-nspi-v003.png)
+
+Source [NSPi](https://github.com/Nontre12/nspi).
+
+## Build (Linux) (Partially working)
+```bash
+cmake -B build -S . -DCMAKE_BUILD_TYPE=Release
+cd build
+make -j$(nproc)
+./NSPi
+```

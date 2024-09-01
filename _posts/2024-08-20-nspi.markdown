@@ -16,9 +16,9 @@ Source [NSPi](https://github.com/Nontre12/nspi).
 
 The `nspi` homebrew app allows to download packages directly on your Switch
 
-![](https://nontre.es/assets/2024-08-20-nspi.jpg)
+![](/assets/2024-08-20-nspi.jpg)
 
-## Build
+## Build (Switch)
 To build this project from source, you'll need to set up the appropriate development environment.
 
 ### Requirements
@@ -40,13 +40,27 @@ To build this project from source, you'll need to set up the appropriate develop
 2. Use the Docker image to build the project
     ```bash
     docker run --rm -it -v "$(pwd):/app" --workdir=/app devkitpro/devkita64:latest bash
-    cmake -B build -S . -DCMAKE_TOOLCHAIN_FILE=cmake/toolchain.cmake
+    cmake -B build -S . -DCMAKE_TOOLCHAIN_FILE=cmake/toolchain.cmake -DCMAKE_BUILD_TYPE=Release
     cd build
     make -j$(nproc)
     ```
 
+3. Send built package to switch with nxlink (optional)
+    ```bash
+    nxlink -a xxx.xxx.xxx.xxx NSPi.nro
+    ```
+
+
 ### Note for libnx
 In this project, instead of linking the precompiled libnx library provided by devkitPro, I preferred to add libnx compilation to the build process. This means that libnx will be built from source as part of this project's build process, ensuring that you have the latest version and any custom modifications needed for this project.
+
+## Build (Linux) (Partially working)
+```bash
+cmake -B build -S . -DCMAKE_BUILD_TYPE=Release
+cd build
+make -j$(nproc)
+./NSPi
+```
 
 ## Install
 1. Download the `NSPi.nro` file.
@@ -56,4 +70,4 @@ In this project, instead of linking the precompiled libnx library provided by de
 5. Insert the SD card back into your Nintendo Switch.
 
 ## License
-This project is licensed under the GNU General Public License v3.0. See the [LICENSE](https://github.com/Nontre12/nspi/blob/main/LICENSE) file for details.
+This project is licensed under the GNU General Public License v3.0. See the [LICENSE](LICENSE) file for details.
