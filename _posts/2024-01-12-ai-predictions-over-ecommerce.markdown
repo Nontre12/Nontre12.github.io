@@ -2,7 +2,7 @@
 layout: post
 title: 💻 AI predictions in an online store - 01
 excerpt: Predict whether a user accepts third-party cookies based on their behavior in an online store
-tags: ai machine-learning ecommerce
+tags: python ai artificial-inteligence machine-learning e-commerce
 ---
 
 ![graph of model](/assets/2024-01-12-ai-predictions-over-ecommerce-02.png)
